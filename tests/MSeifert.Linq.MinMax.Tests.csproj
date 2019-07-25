@@ -24,12 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\MinMax.csproj" />
+    <ProjectReference Include="..\src\MSeifert.Linq.MinMax.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Condition="'$(Configuration)' == 'Test'" Command="&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; &quot;$(OutDir)\MinMax.Tests.dll&quot;" />
-    <Exec Condition="'$(Configuration)' == 'Coverage'" Command="&quot;$(UserProfile)\.nuget\packages\opencover\4.7.922\tools\OpenCover.Console.exe&quot; ^&#xD;&#xA;-register:user ^&#xD;&#xA;-target:&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; ^&#xD;&#xA;-targetargs:&quot;$(OutDir)\MinMax.Tests.dll -noshadow&quot; ^&#xD;&#xA;-filter:&quot;+[MSeifert.Linq*]*&quot; ^&#xD;&#xA;-mergebyhash ^&#xD;&#xA;-skipautoprops ^&#xD;&#xA;-output:&quot;$(OutDir)coverage.xml&quot; &amp;&#xD;&#xA;&#xD;&#xA;&quot;$(UserProfile)\.nuget\packages\reportgenerator\4.2.10\tools\net47\ReportGenerator.exe&quot; ^&#xD;&#xA; -reports:&quot;$(OutDir)coverage.xml&quot; ^&#xD;&#xA; -targetdir:&quot;$(OutDir)Coverage\HTML&quot;" />
+    <Exec Condition="'$(Configuration)' == 'Test'" Command="&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; &quot;$(OutDir)\MSeifert.Linq.MinMax.Tests.dll&quot;" />
+    <Exec Condition="'$(Configuration)' == 'Coverage'" Command="&quot;$(UserProfile)\.nuget\packages\opencover\4.7.922\tools\OpenCover.Console.exe&quot; -register:user -target:&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; -targetargs:&quot;$(OutDir)\MSeifert.Linq.MinMax.Tests.dll -noshadow&quot; -filter:&quot;+[MSeifert.Linq.MinMax]* -[*]MSeifert.Linq.MinMax.Texts* -[MSeifert.Linq.MinMax.Tests]*&quot; -mergebyhash -skipautoprops -output:&quot;$(OutDir)coverage.xml&quot; &amp; &quot;$(UserProfile)\.nuget\packages\reportgenerator\4.2.10\tools\net47\ReportGenerator.exe&quot; -reports:&quot;$(OutDir)coverage.xml&quot; -targetdir:&quot;$(OutDir)Coverage\HTML&quot;" />
   </Target>
 
 </Project>

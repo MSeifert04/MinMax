@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MSeifert.Linq.Texts {
+namespace MSeifert.Linq.MinMax.Texts {
     using System;
     using System.Reflection;
     
@@ -40,7 +40,7 @@ namespace MSeifert.Linq.Texts {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MinMax.Texts.Texts", typeof(Texts).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MSeifert.Linq.MinMax.Texts.Texts", typeof(Texts).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,11 +62,11 @@ namespace MSeifert.Linq.Texts {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hello, world!.
+        ///   Looks up a localized string similar to Enumerable contains no elements.
         /// </summary>
-        internal static string String1 {
+        internal static string ContainsNoElements {
             get {
-                return ResourceManager.GetString("String1", resourceCulture);
+                return ResourceManager.GetString("ContainsNoElements", resourceCulture);
             }
         }
     }

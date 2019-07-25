@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using BenchmarkDotNet.Running;
 
-using BenchmarkDotNet.Running;
-
-namespace MSeifert.Linq.Benchmarks
+namespace MSeifert.Linq.MinMax.Benchmarks
 {
     public static class Program
     {

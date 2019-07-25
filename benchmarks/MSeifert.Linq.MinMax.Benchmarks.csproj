@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\MinMax.csproj" />
+    <ProjectReference Include="..\src\MSeifert.Linq.MinMax.csproj" />
   </ItemGroup>
 
 </Project>
