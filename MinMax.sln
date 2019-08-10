@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{684ADF3E-23D0-4815-8C71-039F58062E98}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{AAA188CE-30B3-4931-A504-18BE48F03DD7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{AAA188CE-30B3-4931-A504-18BE48F03DD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{B8E3619A-91D3-499D-9501-8FCA32EC3627}"
 EndProject
@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeifert.Linq.MinMax.Documentation", "docs\MSeifert.Linq.MinMax.Documentation.csproj", "{8708DBA4-9A17-4D76-8326-7C0DBF0E1D25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeifert.Linq.MinMax.Documentation", "documentation\MSeifert.Linq.MinMax.Documentation.csproj", "{8708DBA4-9A17-4D76-8326-7C0DBF0E1D25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FC415D95-2431-4A2F-8B70-E19C5A488776}"
 	ProjectSection(SolutionItems) = preProject

@@ -8,11 +8,12 @@ namespace MSeifert.Linq.MinMax.Samples
     {
         public static void Main(string[] args)
         {
-            //Example1();
-            //Example2();
-            //Example3();
+            Example1();
+            Example2();
+            Example3();
             Example4();
             Example5();
+            Example6();
         }
 
         public static void Example1()
@@ -83,6 +84,14 @@ namespace MSeifert.Linq.MinMax.Samples
             l.Min();
             l.Max();
             Console.WriteLine(IntegerWithComparisonCount.NumberOfComparisons);
+        }
+
+        public static void Example6()
+        {
+            var l = new List<string> { "a", "Z" };
+            var minmax = l.MinMax(StringComparer.Ordinal);
+            Console.WriteLine(minmax.Minimum);
+            Console.WriteLine(minmax.Maximum);
         }
     }
 

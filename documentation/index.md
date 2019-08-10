@@ -69,6 +69,19 @@ Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
 Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
 ```
 
+There are overloads for both methods that accept an IComparer<T>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using MSeifert.Linq.MinMax;
+
+var l = new List<string> { "a", "Z" };
+var minmax = l.MinMax(StringComparer.Ordinal);
+Console.WriteLine(minmax.Minimum);  // Z
+Console.WriteLine(minmax.Maximum);  // a
+```
+
 As every extension method these methods can also be used with an enumerable as argument instead
 of as method on the enumerable
 
