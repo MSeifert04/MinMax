@@ -1,3 +1,8 @@
 # API Reference
 
-The following pages list the complete public API of this package.
+The package contains just two extension methods for `System.Collections.Generic.IEnumerable<T>` and
+one struct for the return value of these methods:
+
+- MinMax
+- MinMaxBy
+- MinMaxResult

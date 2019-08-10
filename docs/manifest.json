@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "Nnufp1rfPW22dtq5SMrc9g=="
+          "hash": "AoBsuetGDvPqSOOeAReG8w=="
         }
       },
       "is_incremental": false,
@@ -24,7 +24,7 @@
           "hash": "LRaG6DzM6BtVjC5Fqn01Bg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "Z7MdQ2hEg57mXvo/Ze84Kw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MSeifert.Linq.MinMax.MinMaxByExt.html",
-          "hash": "RLttH7q/uLapLbWLS3MkMg=="
+          "hash": "Xe1pqp03wZU+QNi5JAqQVA=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MSeifert.Linq.MinMax.MinMaxExt.html",
-          "hash": "2Su/98qdCPXSnVih1Xy7Yg=="
+          "hash": "s9rEi+T0c2USZHds+7PU2A=="
         }
       },
       "is_incremental": false,
@@ -127,12 +127,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -143,23 +141,23 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
