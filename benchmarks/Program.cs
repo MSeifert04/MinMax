@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace MSeifert.Linq.MinMax.Benchmarks
+namespace MSeifert.MinMax.Benchmarks
 {
     public static class Program
     {

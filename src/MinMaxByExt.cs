@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MSeifert.Linq.MinMax
+namespace MSeifert.MinMax
 {
     /// <summary>
     /// <para>

@@ -1,4 +1,4 @@
-﻿namespace MSeifert.Linq.MinMax.Tests.Util
+﻿namespace MSeifert.MinMax.Tests.Util
 {
     internal class ClassWithIntField
     {

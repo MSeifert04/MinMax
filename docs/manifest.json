@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "LRaG6DzM6BtVjC5Fqn01Bg=="
+          "hash": "VHINUto5cTMfn5tJVQhVLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,19 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Z7MdQ2hEg57mXvo/Ze84Kw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.Linq.MinMax.MinMaxByExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MSeifert.Linq.MinMax.MinMaxByExt.html",
-          "hash": "Xe1pqp03wZU+QNi5JAqQVA=="
+          "hash": "G0Bg8u2Dn6HmtMl5z4TVTw=="
         }
       },
       "is_incremental": false,
@@ -65,11 +53,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.Linq.MinMax.MinMaxExt.yml",
+      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxByExt.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.Linq.MinMax.MinMaxExt.html",
-          "hash": "s9rEi+T0c2USZHds+7PU2A=="
+          "relative_path": "api/MSeifert.MinMax.MinMaxByExt.html",
+          "hash": "3DuPWt8CETyMdi42FzhLkw=="
         }
       },
       "is_incremental": false,
@@ -77,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.Linq.MinMax.MinMaxResult-1.yml",
+      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxExt.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.Linq.MinMax.MinMaxResult-1.html",
-          "hash": "VTW7n25QMmRZmb+89LM9QQ=="
+          "relative_path": "api/MSeifert.MinMax.MinMaxExt.html",
+          "hash": "sUsLYZeU/Gh7sZIznKBV+g=="
         }
       },
       "is_incremental": false,
@@ -89,11 +77,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.Linq.MinMax.yml",
+      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxResult-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.Linq.MinMax.html",
-          "hash": "Xq1T9ICKxh25DTK7ssVEjA=="
+          "relative_path": "api/MSeifert.MinMax.MinMaxResult-1.html",
+          "hash": "P7G3yicfScRhhhdO9a1lAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/MSeifert.MinMax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MSeifert.MinMax.html",
+          "hash": "RVNuWyKM5eUrOVFPr3nw2w=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "79Pk/lKV1GPyFRIFOtdEvg=="
+          "hash": "1cOafRUDFMmBE+OZI7u5Jg=="
         }
       },
       "is_incremental": false,
@@ -127,10 +127,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -141,23 +143,23 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

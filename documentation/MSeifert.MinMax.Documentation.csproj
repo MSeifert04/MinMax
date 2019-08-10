@@ -60,9 +60,9 @@
     <None Include="toc.yml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\MSeifert.Linq.MinMax.csproj">
+    <ProjectReference Include="..\src\MSeifert.MinMax.csproj">
       <Project>{2c6000b1-4b1a-478a-9f90-174d10208866}</Project>
-      <Name>MSeifert.Linq.MinMax</Name>
+      <Name>MSeifert.MinMax</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

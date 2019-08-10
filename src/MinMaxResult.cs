@@ -1,4 +1,4 @@
-﻿namespace MSeifert.Linq.MinMax
+﻿namespace MSeifert.MinMax
 {
     /// <summary>
     /// Representing the result of a <see cref="MinMaxExt.MinMax{T}(System.Collections.Generic.IEnumerable{T})"/> invocation.

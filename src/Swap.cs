@@ -1,4 +1,4 @@
-﻿namespace MSeifert.Linq.MinMax
+﻿namespace MSeifert.MinMax
 {
     /// <summary>
     /// Swap utility class.

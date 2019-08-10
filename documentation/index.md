@@ -9,7 +9,7 @@ less comparisons.
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List<int> { 3, 2, 4, 6, 1, 4 };
 var minmax = l.MinMax();
@@ -22,7 +22,7 @@ The MinMaxBy method allows to sort the objects by some selector function:
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 public class Person
 {
@@ -48,7 +48,7 @@ Both return the first encountered minimum and maximum.
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 public class Person
 {
@@ -74,7 +74,7 @@ There are overloads for both methods that accept an IComparer<T>
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List<string> { "a", "Z" };
 var minmax = l.MinMax(StringComparer.Ordinal);
@@ -88,7 +88,7 @@ of as method on the enumerable
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List<int> { 3, 2, 4, 6, 1, 4 };
 var minmax = MinMaxExt.MinMax(l);

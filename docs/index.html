@@ -68,7 +68,7 @@ however the implementation in this package calculates both quantities in a singl
 less comparisons.</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List&lt;int&gt; { 3, 2, 4, 6, 1, 4 };
 var minmax = l.MinMax();
@@ -78,7 +78,7 @@ Console.WriteLine(minmax.Maximum); // 6
 <p>The MinMaxBy method allows to sort the objects by some selector function:</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 public class Person
 {
@@ -101,7 +101,7 @@ Console.WriteLine(minmax.Maximum); // Person(Name=Paul, Age=32)
 <p>Both return the first encountered minimum and maximum.</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 public class Person
 {
@@ -120,42 +120,38 @@ var l = new List&lt;Person&gt;
 var minmax = l.MinMaxBy(p =&gt; p.Age);
 Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
 Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
-```
-
-There are overloads for both methods that accept an IComparer&lt;T&gt;
-
-```csharp
-using System;
+</code></pre>
+<p>There are overloads for both methods that accept an IComparer<t><p>
+<pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List&lt;string&gt; { &quot;a&quot;, &quot;Z&quot; };
 var minmax = l.MinMax(StringComparer.Ordinal);
 Console.WriteLine(minmax.Minimum);  // Z
 Console.WriteLine(minmax.Maximum);  // a
-```
-
-As every extension method these methods can also be used with an enumerable as argument instead
-of as method on the enumerable
-
-```csharp
-using System;
+</code></pre>
+<p>As every extension method these methods can also be used with an enumerable as argument instead
+of as method on the enumerable</p>
+<pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax;
+using MSeifert.MinMax;
 
 var l = new List&lt;int&gt; { 3, 2, 4, 6, 1, 4 };
 var minmax = MinMaxExt.MinMax(l);
 Console.WriteLine(minmax.Minimum); // 1
 Console.WriteLine(minmax.Maximum); // 6
-```
 </code></pre>
-</article>
+</t></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MSeifert04/MinMax/blob/master/documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Less comparisons than Min and Max individually </title>
+    <title>Namespace MSeifert.MinMax
+   </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Less comparisons than Min and Max individually ">
+    <meta name="title" content="Namespace MSeifert.MinMax
+   ">
     <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,63 +68,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="less-comparisons-than-min-and-max-individually">Less comparisons than Min and Max individually</h1>
-
-<p>The MinMax methods approximately need one and a half comparisons per element. This differs from
-using Min and Max which both need 1 comparison per element and thus 2 comparisons per element
-when using both.</p>
-<pre><code class="lang-csharp">using System;
-using System.Collections.Generic;
-using System.Linq;
-
-public class IntegerWithComparisonCount : IComparable&lt;IntegerWithComparisonCount&gt;
-{
-    public int Value { get; set; }
-
-    public static int NumberOfComparisons { get; private set; }
-
-    public static void ResetNumberOfComparisons()
-    {
-        NumberOfComparisons = 0;
-    }
-
-    public IntegerWithComparisonCount(int value)
-    {
-        Value = value;
-    }
-    public int CompareTo(IntegerWithComparisonCount other)
-    {
-        NumberOfComparisons++;
-        return Value.CompareTo(other.Value);
-    }
-}
-
-var l = new List&lt;IntegerWithComparisonCount&gt;
-{
-    new IntegerWithComparisonCount(3),
-    new IntegerWithComparisonCount(2),
-    new IntegerWithComparisonCount(4),
-    new IntegerWithComparisonCount(6),
-    new IntegerWithComparisonCount(1),
-    new IntegerWithComparisonCount(4),
-    new IntegerWithComparisonCount(3),
-    new IntegerWithComparisonCount(2),
-    new IntegerWithComparisonCount(4),
-    new IntegerWithComparisonCount(6),
-    new IntegerWithComparisonCount(1),
-    new IntegerWithComparisonCount(4)
-};
-
-l.MinMax();
-Console.WriteLine(IntegerWithComparisonCount.NumberOfComparisons);  // 17
-IntegerWithComparisonCount.ResetNumberOfComparisons();
-
-l.Min();
-l.Max();
-Console.WriteLine(IntegerWithComparisonCount.NumberOfComparisons);  // 22
-</code></pre>
-<p>The number of needed comparisons 17 / 22 is approximately the 3/4 we would expect.</p>
+            <article class="content wrap" id="_content" data-uid="MSeifert.MinMax">
+  
+  <h1 id="MSeifert_MinMax" data-uid="MSeifert.MinMax" class="text-break">Namespace MSeifert.MinMax
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="MSeifert.MinMax.MinMaxByExt.html">MinMaxByExt</a></h4>
+      <section><p>
+The MinMaxBy extension methods for <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+</p>
+<p>
+The MinMaxBy methods return the minimum and maximum item of the enumerable by comparing the
+result of a key-function applied to the items. The functions will not return the result of
+the key-function but the actual item that had the minimum/maximum key.
+In this regard these methods differs from the overload of Min and Max in the System.Linq
+namespace that take a function to **transform** the elements.
+</p>
+</section>
+      <h4><a class="xref" href="MSeifert.MinMax.MinMaxExt.html">MinMaxExt</a></h4>
+      <section><p>The MinMax extension methods for <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+<p>The MinMax methods return the minimum and maximum item of the enumerable.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="MSeifert.MinMax.MinMaxResult-1.html">MinMaxResult&lt;T&gt;</a></h4>
+      <section><p>Representing the result of a <a class="xref" href="MSeifert.MinMax.MinMaxExt.html#MSeifert_MinMax_MinMaxExt_MinMax__1_System_Collections_Generic_IEnumerable___0__">MinMax&lt;T&gt;(IEnumerable&lt;T&gt;)</a> invocation.</p>
+</section>
 </article>
           </div>
           
@@ -130,9 +105,6 @@ Console.WriteLine(IntegerWithComparisonCount.NumberOfComparisons);  // 22
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/MSeifert04/MinMax/blob/master/documentation/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

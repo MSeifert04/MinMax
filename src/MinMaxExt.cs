@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MSeifert.Linq.MinMax
+namespace MSeifert.MinMax
 {
     /// <summary>
     /// <para>The MinMax extension methods for <see cref="IEnumerable{T}"/>.</para>
@@ -153,4 +153,3 @@ namespace MSeifert.Linq.MinMax
         }
     }
 }
-

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MSeifert.Linq.MinMax.Samples
+namespace MSeifert.MinMax.Samples
 {
     public static class Program
     {

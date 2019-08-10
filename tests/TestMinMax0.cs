@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using MSeifert.Linq.MinMax.Tests.TestData;
+using MSeifert.MinMax.Tests.TestData;
 using Xunit;
 
-namespace MSeifert.Linq.MinMax.Tests
+namespace MSeifert.MinMax.Tests
 {
     public class TestMinMax0
     {

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\MSeifert.Linq.MinMax.csproj" />
+    <ProjectReference Include="..\src\MSeifert.MinMax.csproj" />
   </ItemGroup>
 
 </Project>

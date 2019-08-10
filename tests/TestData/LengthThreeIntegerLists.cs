@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 
-namespace MSeifert.Linq.MinMax.Tests.TestData
+namespace MSeifert.MinMax.Tests.TestData
 {
     internal class LengthThreeIntegerLists : TheoryData<List<int>>
     {
