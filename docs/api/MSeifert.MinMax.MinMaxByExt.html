@@ -138,6 +138,7 @@ selector function. In case of multiple occurrences the first instance is returne
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MinMaxResult&lt;TItem&gt; MinMaxBy&lt;TItem, TKey&gt;(this IEnumerable&lt;TItem&gt; source, Func&lt;TItem, TKey&gt; keyFunc)
+
     where TKey : IComparable&lt;TKey&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
