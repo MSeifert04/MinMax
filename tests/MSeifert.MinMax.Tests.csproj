@@ -29,7 +29,7 @@
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Condition="'$(Configuration)' == 'Test'" Command="&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; &quot;$(OutDir)\MSeifert.MinMax.Tests.dll&quot;" />
-    <Exec Condition="'$(Configuration)' == 'Coverage'" Command="&quot;$(UserProfile)\.nuget\packages\opencover\4.7.922\tools\OpenCover.Console.exe&quot; -register:user -target:&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; -targetargs:&quot;$(OutDir)\MSeifert.MinMax.Tests.dll -noshadow&quot; -filter:&quot;+[MSeifert.MinMax]* -[*]MSeifert.MinMax.Texts* -[MSeifert.MinMax.Tests]*&quot; -mergebyhash -skipautoprops -output:&quot;$(OutDir)coverage.xml&quot; &amp; &quot;$(UserProfile)\.nuget\packages\reportgenerator\4.2.12\tools\net47\ReportGenerator.exe&quot; -reports:&quot;$(OutDir)coverage.xml&quot; -targetdir:&quot;$(SolutionDir).coverage\&quot;" />
+    <Exec Condition="'$(Configuration)' == 'Coverage'" Command="&quot;$(UserProfile)\.nuget\packages\opencover\4.7.922\tools\OpenCover.Console.exe&quot; -register:user -target:&quot;$(UserProfile)\.nuget\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe&quot; -targetargs:&quot;$(OutDir)\MSeifert.MinMax.Tests.dll -noshadow&quot; -filter:&quot;+[MSeifert.MinMax]* -[*]MSeifert.MinMax.Texts* -[MSeifert.MinMax.Tests]*&quot; -mergebyhash -skipautoprops -output:&quot;$(OutDir)coverage.xml&quot; &amp; &quot;$(UserProfile)\.nuget\packages\reportgenerator\4.2.12\tools\net47\ReportGenerator.exe&quot; -reports:&quot;$(OutDir)coverage.xml&quot; -targetdir:&quot;$(ProjectDir)..\.coverage\&quot;" />
   </Target>
 
 </Project>
