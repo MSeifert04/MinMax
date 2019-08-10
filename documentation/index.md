@@ -45,7 +45,7 @@ Console.WriteLine(minmax.Maximum); // Person(Name=Paul, Age=32)
 
 Both return the first encountered minimum and maximum.
 
-````csharp
+```csharp
 using System;
 using System.Collections.Generic;
 using MSeifert.Linq.MinMax;
