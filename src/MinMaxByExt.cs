@@ -78,8 +78,8 @@ namespace MSeifert.MinMax
                     var secondItemKey = keyFunc(secondItem);
                     if (firstItemKey.CompareTo(secondItemKey) > 0)
                     {
-                        Swapper.Swap(ref firstItem, ref secondItem);
-                        Swapper.Swap(ref firstItemKey, ref secondItemKey);
+                        (firstItem, secondItem) = (secondItem, firstItem);
+                        (firstItemKey, secondItemKey) = (secondItemKey, firstItemKey);
                     }
                     if (firstItemKey.CompareTo(minKey) < 0)
                     {
@@ -108,7 +108,6 @@ namespace MSeifert.MinMax
             }
             return new MinMaxResult<TItem>(min, max);
         }
-
 
         /// <summary>
         /// Returns the minimum and maximum value of an iterable by comparing the results of a
@@ -179,8 +178,8 @@ namespace MSeifert.MinMax
                     var secondItemKey = keyFunc(secondItem);
                     if (comparer.Compare(firstItemKey, secondItemKey) > 0)
                     {
-                        Swapper.Swap(ref firstItem, ref secondItem);
-                        Swapper.Swap(ref firstItemKey, ref secondItemKey);
+                        (firstItem, secondItem) = (secondItem, firstItem);
+                        (firstItemKey, secondItemKey) = (secondItemKey, firstItemKey);
                     }
                     if (comparer.Compare(firstItemKey, minKey) < 0)
                     {

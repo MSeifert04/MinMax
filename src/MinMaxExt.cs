@@ -51,7 +51,7 @@ namespace MSeifert.MinMax
                     var secondItem = enumerator.Current;
                     if (firstItem.CompareTo(secondItem) > 0)
                     {
-                        Swapper.Swap(ref firstItem, ref secondItem);
+                        (firstItem, secondItem) = (secondItem, firstItem);
                     }
                     if (firstItem.CompareTo(min) < 0)
                     {
@@ -126,7 +126,7 @@ namespace MSeifert.MinMax
                     var secondItem = enumerator.Current;
                     if (comparer.Compare(firstItem, secondItem) > 0)
                     {
-                        Swapper.Swap(ref firstItem, ref secondItem);
+                        (firstItem, secondItem) = (secondItem, firstItem);
                     }
                     if (comparer.Compare(firstItem, min) < 0)
                     {
