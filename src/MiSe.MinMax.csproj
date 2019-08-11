@@ -15,6 +15,7 @@
   <PropertyGroup>
     <DocumentationFile>bin\MiSe.MinMax.xml</DocumentationFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageTags>linq extensions</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
