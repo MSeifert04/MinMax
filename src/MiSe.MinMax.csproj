@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DocumentationFile>D:\P\VS\MiSe.MinMax\src\bin\MiSe.MinMax.xml</DocumentationFile>
+    <DocumentationFile>bin\MiSe.MinMax.xml</DocumentationFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
@@ -37,10 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

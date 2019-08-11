@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/P/VS/MinMax/documentation",
+  "source_base_path": "D:/P/VS/MiSe.MinMax/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "AoBsuetGDvPqSOOeAReG8w=="
+          "hash": "ZD7oTHx20VpzX3o3cYzlbw=="
         }
       },
       "is_incremental": true,
@@ -24,7 +24,7 @@
           "hash": "WjhAlqqUQPIODWWWcJeOlA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "VHINUto5cTMfn5tJVQhVLg=="
+          "hash": "k1Iog6pKngSeRu1GjzFuRQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "G0Bg8u2Dn6HmtMl5z4TVTw=="
+          "hash": "fr1wlcWdKgO00EpjGxBdKw=="
         }
       },
       "is_incremental": true,
@@ -65,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxByExt.yml",
+      "source_relative_path": "obj/api/MiSe.MinMax.Extensions.MinMaxByExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.MinMax.MinMaxByExt.html",
-          "hash": "RoO1IvG/YFFeuykNb/2ZnQ=="
+          "relative_path": "api/MiSe.MinMax.Extensions.MinMaxByExtension.html",
+          "hash": "XI93beO4jIalf6wIwrczfw=="
         }
       },
       "is_incremental": true,
@@ -77,11 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxExt.yml",
+      "source_relative_path": "obj/api/MiSe.MinMax.Extensions.MinMaxExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.MinMax.MinMaxExt.html",
-          "hash": "i62Lw3ih/hBUnoEBtkCmRg=="
+          "relative_path": "api/MiSe.MinMax.Extensions.MinMaxExtension.html",
+          "hash": "MqIsgpWMJlI6JUllbMhm1g=="
         }
       },
       "is_incremental": true,
@@ -89,11 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.MinMax.MinMaxResult-1.yml",
+      "source_relative_path": "obj/api/MiSe.MinMax.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.MinMax.MinMaxResult-1.html",
-          "hash": "P7G3yicfScRhhhdO9a1lAQ=="
+          "relative_path": "api/MiSe.MinMax.Extensions.html",
+          "hash": "qLq8WH2VudIbgxtemIoi4Q=="
         }
       },
       "is_incremental": true,
@@ -101,11 +101,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/MSeifert.MinMax.yml",
+      "source_relative_path": "obj/api/MiSe.MinMax.MinMaxOps.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MSeifert.MinMax.html",
-          "hash": "RVNuWyKM5eUrOVFPr3nw2w=="
+          "relative_path": "api/MiSe.MinMax.MinMaxOps.html",
+          "hash": "LqWQV7rrl2RSDoWAseh2gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/MiSe.MinMax.MinMaxResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MiSe.MinMax.MinMaxResult-1.html",
+          "hash": "OHoIhIQ1h5aQDNaZiUzy0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/MiSe.MinMax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MiSe.MinMax.html",
+          "hash": "Y418If/ItlRC/blKhktFbA=="
         }
       },
       "is_incremental": true,
@@ -117,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1cOafRUDFMmBE+OZI7u5Jg=="
+          "hash": "d+xg4H9QYyXH1N/OUN24nw=="
         }
       },
       "is_incremental": false,
@@ -155,8 +179,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
+          "total_file_count": 6,
+          "skipped_file_count": 6
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,

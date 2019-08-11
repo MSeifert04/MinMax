@@ -1,114 +1,176 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: MSeifert.MinMax
-  name: MSeifert.MinMax
-  href: api/MSeifert.MinMax.html
-  commentId: N:MSeifert.MinMax
-  fullName: MSeifert.MinMax
-  nameWithType: MSeifert.MinMax
-- uid: MSeifert.MinMax.MinMaxByExt
-  name: MinMaxByExt
-  href: api/MSeifert.MinMax.MinMaxByExt.html
-  commentId: T:MSeifert.MinMax.MinMaxByExt
-  fullName: MSeifert.MinMax.MinMaxByExt
-  nameWithType: MinMaxByExt
-- uid: MSeifert.MinMax.MinMaxByExt.MinMaxBy*
+- uid: MiSe.MinMax
+  name: MiSe.MinMax
+  href: api/MiSe.MinMax.html
+  commentId: N:MiSe.MinMax
+  fullName: MiSe.MinMax
+  nameWithType: MiSe.MinMax
+- uid: MiSe.MinMax.Extensions
+  name: MiSe.MinMax.Extensions
+  href: api/MiSe.MinMax.Extensions.html
+  commentId: N:MiSe.MinMax.Extensions
+  fullName: MiSe.MinMax.Extensions
+  nameWithType: MiSe.MinMax.Extensions
+- uid: MiSe.MinMax.Extensions.MinMaxByExtension
+  name: MinMaxByExtension
+  href: api/MiSe.MinMax.Extensions.MinMaxByExtension.html
+  commentId: T:MiSe.MinMax.Extensions.MinMaxByExtension
+  fullName: MiSe.MinMax.Extensions.MinMaxByExtension
+  nameWithType: MinMaxByExtension
+- uid: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy*
   name: MinMaxBy
-  href: api/MSeifert.MinMax.MinMaxByExt.html#MSeifert_MinMax_MinMaxByExt_MinMaxBy_
-  commentId: Overload:MSeifert.MinMax.MinMaxByExt.MinMaxBy
+  href: api/MiSe.MinMax.Extensions.MinMaxByExtension.html#MiSe_MinMax_Extensions_MinMaxByExtension_MinMaxBy_
+  commentId: Overload:MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy
   isSpec: "True"
-  fullName: MSeifert.MinMax.MinMaxByExt.MinMaxBy
-  nameWithType: MinMaxByExt.MinMaxBy
-- uid: MSeifert.MinMax.MinMaxByExt.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  fullName: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy
+  nameWithType: MinMaxByExtension.MinMaxBy
+- uid: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   name: MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>)
-  href: api/MSeifert.MinMax.MinMaxByExt.html#MSeifert_MinMax_MinMaxByExt_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
-  commentId: M:MSeifert.MinMax.MinMaxByExt.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  href: api/MiSe.MinMax.Extensions.MinMaxByExtension.html#MiSe_MinMax_Extensions_MinMaxByExtension_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   name.vb: MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey))
-  fullName: MSeifert.MinMax.MinMaxByExt.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>)
-  fullName.vb: MSeifert.MinMax.MinMaxByExt.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey))
-  nameWithType: MinMaxByExt.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>)
-  nameWithType.vb: MinMaxByExt.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey))
-- uid: MSeifert.MinMax.MinMaxByExt.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  fullName: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>)
+  fullName.vb: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey))
+  nameWithType: MinMaxByExtension.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>)
+  nameWithType.vb: MinMaxByExtension.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey))
+- uid: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
   name: MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>, IComparer<TKey>)
-  href: api/MSeifert.MinMax.MinMaxByExt.html#MSeifert_MinMax_MinMaxByExt_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1__
-  commentId: M:MSeifert.MinMax.MinMaxByExt.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  href: api/MiSe.MinMax.Extensions.MinMaxByExtension.html#MiSe_MinMax_Extensions_MinMaxByExtension_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1__
+  commentId: M:MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
   name.vb: MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey), IComparer(Of TKey))
-  fullName: MSeifert.MinMax.MinMaxByExt.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>, System.Collections.Generic.IComparer<TKey>)
-  fullName.vb: MSeifert.MinMax.MinMaxByExt.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey), System.Collections.Generic.IComparer(Of TKey))
-  nameWithType: MinMaxByExt.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>, IComparer<TKey>)
-  nameWithType.vb: MinMaxByExt.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey), IComparer(Of TKey))
-- uid: MSeifert.MinMax.MinMaxExt
-  name: MinMaxExt
-  href: api/MSeifert.MinMax.MinMaxExt.html
-  commentId: T:MSeifert.MinMax.MinMaxExt
-  fullName: MSeifert.MinMax.MinMaxExt
-  nameWithType: MinMaxExt
-- uid: MSeifert.MinMax.MinMaxExt.MinMax*
+  fullName: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>, System.Collections.Generic.IComparer<TKey>)
+  fullName.vb: MiSe.MinMax.Extensions.MinMaxByExtension.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey), System.Collections.Generic.IComparer(Of TKey))
+  nameWithType: MinMaxByExtension.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>, IComparer<TKey>)
+  nameWithType.vb: MinMaxByExtension.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey), IComparer(Of TKey))
+- uid: MiSe.MinMax.Extensions.MinMaxExtension
+  name: MinMaxExtension
+  href: api/MiSe.MinMax.Extensions.MinMaxExtension.html
+  commentId: T:MiSe.MinMax.Extensions.MinMaxExtension
+  fullName: MiSe.MinMax.Extensions.MinMaxExtension
+  nameWithType: MinMaxExtension
+- uid: MiSe.MinMax.Extensions.MinMaxExtension.MinMax*
   name: MinMax
-  href: api/MSeifert.MinMax.MinMaxExt.html#MSeifert_MinMax_MinMaxExt_MinMax_
-  commentId: Overload:MSeifert.MinMax.MinMaxExt.MinMax
+  href: api/MiSe.MinMax.Extensions.MinMaxExtension.html#MiSe_MinMax_Extensions_MinMaxExtension_MinMax_
+  commentId: Overload:MiSe.MinMax.Extensions.MinMaxExtension.MinMax
   isSpec: "True"
-  fullName: MSeifert.MinMax.MinMaxExt.MinMax
-  nameWithType: MinMaxExt.MinMax
-- uid: MSeifert.MinMax.MinMaxExt.MinMax``1(System.Collections.Generic.IEnumerable{``0})
+  fullName: MiSe.MinMax.Extensions.MinMaxExtension.MinMax
+  nameWithType: MinMaxExtension.MinMax
+- uid: MiSe.MinMax.Extensions.MinMaxExtension.MinMax``1(System.Collections.Generic.IEnumerable{``0})
   name: MinMax<T>(IEnumerable<T>)
-  href: api/MSeifert.MinMax.MinMaxExt.html#MSeifert_MinMax_MinMaxExt_MinMax__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:MSeifert.MinMax.MinMaxExt.MinMax``1(System.Collections.Generic.IEnumerable{``0})
+  href: api/MiSe.MinMax.Extensions.MinMaxExtension.html#MiSe_MinMax_Extensions_MinMaxExtension_MinMax__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:MiSe.MinMax.Extensions.MinMaxExtension.MinMax``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: MinMax(Of T)(IEnumerable(Of T))
-  fullName: MSeifert.MinMax.MinMaxExt.MinMax<T>(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: MSeifert.MinMax.MinMaxExt.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: MinMaxExt.MinMax<T>(IEnumerable<T>)
-  nameWithType.vb: MinMaxExt.MinMax(Of T)(IEnumerable(Of T))
-- uid: MSeifert.MinMax.MinMaxExt.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
+  fullName: MiSe.MinMax.Extensions.MinMaxExtension.MinMax<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: MiSe.MinMax.Extensions.MinMaxExtension.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MinMaxExtension.MinMax<T>(IEnumerable<T>)
+  nameWithType.vb: MinMaxExtension.MinMax(Of T)(IEnumerable(Of T))
+- uid: MiSe.MinMax.Extensions.MinMaxExtension.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
   name: MinMax<T>(IEnumerable<T>, IComparer<T>)
-  href: api/MSeifert.MinMax.MinMaxExt.html#MSeifert_MinMax_MinMaxExt_MinMax__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IComparer___0__
-  commentId: M:MSeifert.MinMax.MinMaxExt.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
+  href: api/MiSe.MinMax.Extensions.MinMaxExtension.html#MiSe_MinMax_Extensions_MinMaxExtension_MinMax__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IComparer___0__
+  commentId: M:MiSe.MinMax.Extensions.MinMaxExtension.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
   name.vb: MinMax(Of T)(IEnumerable(Of T), IComparer(Of T))
-  fullName: MSeifert.MinMax.MinMaxExt.MinMax<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IComparer<T>)
-  fullName.vb: MSeifert.MinMax.MinMaxExt.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IComparer(Of T))
-  nameWithType: MinMaxExt.MinMax<T>(IEnumerable<T>, IComparer<T>)
-  nameWithType.vb: MinMaxExt.MinMax(Of T)(IEnumerable(Of T), IComparer(Of T))
-- uid: MSeifert.MinMax.MinMaxResult`1
+  fullName: MiSe.MinMax.Extensions.MinMaxExtension.MinMax<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MiSe.MinMax.Extensions.MinMaxExtension.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IComparer(Of T))
+  nameWithType: MinMaxExtension.MinMax<T>(IEnumerable<T>, IComparer<T>)
+  nameWithType.vb: MinMaxExtension.MinMax(Of T)(IEnumerable(Of T), IComparer(Of T))
+- uid: MiSe.MinMax.MinMaxOps
+  name: MinMaxOps
+  href: api/MiSe.MinMax.MinMaxOps.html
+  commentId: T:MiSe.MinMax.MinMaxOps
+  fullName: MiSe.MinMax.MinMaxOps
+  nameWithType: MinMaxOps
+- uid: MiSe.MinMax.MinMaxOps.MinMax*
+  name: MinMax
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMax_
+  commentId: Overload:MiSe.MinMax.MinMaxOps.MinMax
+  isSpec: "True"
+  fullName: MiSe.MinMax.MinMaxOps.MinMax
+  nameWithType: MinMaxOps.MinMax
+- uid: MiSe.MinMax.MinMaxOps.MinMax``1(System.Collections.Generic.IEnumerable{``0})
+  name: MinMax<T>(IEnumerable<T>)
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMax__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:MiSe.MinMax.MinMaxOps.MinMax``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: MinMax(Of T)(IEnumerable(Of T))
+  fullName: MiSe.MinMax.MinMaxOps.MinMax<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: MiSe.MinMax.MinMaxOps.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MinMaxOps.MinMax<T>(IEnumerable<T>)
+  nameWithType.vb: MinMaxOps.MinMax(Of T)(IEnumerable(Of T))
+- uid: MiSe.MinMax.MinMaxOps.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
+  name: MinMax<T>(IEnumerable<T>, IComparer<T>)
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMax__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IComparer___0__
+  commentId: M:MiSe.MinMax.MinMaxOps.MinMax``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})
+  name.vb: MinMax(Of T)(IEnumerable(Of T), IComparer(Of T))
+  fullName: MiSe.MinMax.MinMaxOps.MinMax<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MiSe.MinMax.MinMaxOps.MinMax(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IComparer(Of T))
+  nameWithType: MinMaxOps.MinMax<T>(IEnumerable<T>, IComparer<T>)
+  nameWithType.vb: MinMaxOps.MinMax(Of T)(IEnumerable(Of T), IComparer(Of T))
+- uid: MiSe.MinMax.MinMaxOps.MinMaxBy*
+  name: MinMaxBy
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMaxBy_
+  commentId: Overload:MiSe.MinMax.MinMaxOps.MinMaxBy
+  isSpec: "True"
+  fullName: MiSe.MinMax.MinMaxOps.MinMaxBy
+  nameWithType: MinMaxOps.MinMaxBy
+- uid: MiSe.MinMax.MinMaxOps.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>)
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:MiSe.MinMax.MinMaxOps.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey))
+  fullName: MiSe.MinMax.MinMaxOps.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>)
+  fullName.vb: MiSe.MinMax.MinMaxOps.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey))
+  nameWithType: MinMaxOps.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>)
+  nameWithType.vb: MinMaxOps.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey))
+- uid: MiSe.MinMax.MinMaxOps.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  name: MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>, IComparer<TKey>)
+  href: api/MiSe.MinMax.MinMaxOps.html#MiSe_MinMax_MinMaxOps_MinMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1__
+  commentId: M:MiSe.MinMax.MinMaxOps.MinMaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})
+  name.vb: MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey), IComparer(Of TKey))
+  fullName: MiSe.MinMax.MinMaxOps.MinMaxBy<TItem, TKey>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, TKey>, System.Collections.Generic.IComparer<TKey>)
+  fullName.vb: MiSe.MinMax.MinMaxOps.MinMaxBy(Of TItem, TKey)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, TKey), System.Collections.Generic.IComparer(Of TKey))
+  nameWithType: MinMaxOps.MinMaxBy<TItem, TKey>(IEnumerable<TItem>, Func<TItem, TKey>, IComparer<TKey>)
+  nameWithType.vb: MinMaxOps.MinMaxBy(Of TItem, TKey)(IEnumerable(Of TItem), Func(Of TItem, TKey), IComparer(Of TKey))
+- uid: MiSe.MinMax.MinMaxResult`1
   name: MinMaxResult<T>
-  href: api/MSeifert.MinMax.MinMaxResult-1.html
-  commentId: T:MSeifert.MinMax.MinMaxResult`1
+  href: api/MiSe.MinMax.MinMaxResult-1.html
+  commentId: T:MiSe.MinMax.MinMaxResult`1
   name.vb: MinMaxResult(Of T)
-  fullName: MSeifert.MinMax.MinMaxResult<T>
-  fullName.vb: MSeifert.MinMax.MinMaxResult(Of T)
+  fullName: MiSe.MinMax.MinMaxResult<T>
+  fullName.vb: MiSe.MinMax.MinMaxResult(Of T)
   nameWithType: MinMaxResult<T>
   nameWithType.vb: MinMaxResult(Of T)
-- uid: MSeifert.MinMax.MinMaxResult`1.Maximum
+- uid: MiSe.MinMax.MinMaxResult`1.Maximum
   name: Maximum
-  href: api/MSeifert.MinMax.MinMaxResult-1.html#MSeifert_MinMax_MinMaxResult_1_Maximum
-  commentId: P:MSeifert.MinMax.MinMaxResult`1.Maximum
-  fullName: MSeifert.MinMax.MinMaxResult<T>.Maximum
-  fullName.vb: MSeifert.MinMax.MinMaxResult(Of T).Maximum
+  href: api/MiSe.MinMax.MinMaxResult-1.html#MiSe_MinMax_MinMaxResult_1_Maximum
+  commentId: P:MiSe.MinMax.MinMaxResult`1.Maximum
+  fullName: MiSe.MinMax.MinMaxResult<T>.Maximum
+  fullName.vb: MiSe.MinMax.MinMaxResult(Of T).Maximum
   nameWithType: MinMaxResult<T>.Maximum
   nameWithType.vb: MinMaxResult(Of T).Maximum
-- uid: MSeifert.MinMax.MinMaxResult`1.Maximum*
+- uid: MiSe.MinMax.MinMaxResult`1.Maximum*
   name: Maximum
-  href: api/MSeifert.MinMax.MinMaxResult-1.html#MSeifert_MinMax_MinMaxResult_1_Maximum_
-  commentId: Overload:MSeifert.MinMax.MinMaxResult`1.Maximum
+  href: api/MiSe.MinMax.MinMaxResult-1.html#MiSe_MinMax_MinMaxResult_1_Maximum_
+  commentId: Overload:MiSe.MinMax.MinMaxResult`1.Maximum
   isSpec: "True"
-  fullName: MSeifert.MinMax.MinMaxResult<T>.Maximum
-  fullName.vb: MSeifert.MinMax.MinMaxResult(Of T).Maximum
+  fullName: MiSe.MinMax.MinMaxResult<T>.Maximum
+  fullName.vb: MiSe.MinMax.MinMaxResult(Of T).Maximum
   nameWithType: MinMaxResult<T>.Maximum
   nameWithType.vb: MinMaxResult(Of T).Maximum
-- uid: MSeifert.MinMax.MinMaxResult`1.Minimum
+- uid: MiSe.MinMax.MinMaxResult`1.Minimum
   name: Minimum
-  href: api/MSeifert.MinMax.MinMaxResult-1.html#MSeifert_MinMax_MinMaxResult_1_Minimum
-  commentId: P:MSeifert.MinMax.MinMaxResult`1.Minimum
-  fullName: MSeifert.MinMax.MinMaxResult<T>.Minimum
-  fullName.vb: MSeifert.MinMax.MinMaxResult(Of T).Minimum
+  href: api/MiSe.MinMax.MinMaxResult-1.html#MiSe_MinMax_MinMaxResult_1_Minimum
+  commentId: P:MiSe.MinMax.MinMaxResult`1.Minimum
+  fullName: MiSe.MinMax.MinMaxResult<T>.Minimum
+  fullName.vb: MiSe.MinMax.MinMaxResult(Of T).Minimum
   nameWithType: MinMaxResult<T>.Minimum
   nameWithType.vb: MinMaxResult(Of T).Minimum
-- uid: MSeifert.MinMax.MinMaxResult`1.Minimum*
+- uid: MiSe.MinMax.MinMaxResult`1.Minimum*
   name: Minimum
-  href: api/MSeifert.MinMax.MinMaxResult-1.html#MSeifert_MinMax_MinMaxResult_1_Minimum_
-  commentId: Overload:MSeifert.MinMax.MinMaxResult`1.Minimum
+  href: api/MiSe.MinMax.MinMaxResult-1.html#MiSe_MinMax_MinMaxResult_1_Minimum_
+  commentId: Overload:MiSe.MinMax.MinMaxResult`1.Minimum
   isSpec: "True"
-  fullName: MSeifert.MinMax.MinMaxResult<T>.Minimum
-  fullName.vb: MSeifert.MinMax.MinMaxResult(Of T).Minimum
+  fullName: MiSe.MinMax.MinMaxResult<T>.Minimum
+  fullName.vb: MiSe.MinMax.MinMaxResult(Of T).Minimum
   nameWithType: MinMaxResult<T>.Minimum
   nameWithType.vb: MinMaxResult(Of T).Minimum

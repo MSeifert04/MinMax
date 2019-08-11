@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The MinMax and MinMaxBy extension methods </title>
+    <title>The MinMax and MinMaxBy methods </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="The MinMax and MinMaxBy extension methods ">
+    <meta name="title" content="The MinMax and MinMaxBy methods ">
     <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,15 +60,15 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="the-minmax-and-minmaxby-extension-methods">The MinMax and MinMaxBy extension methods</h1>
+<h1 id="the-minmax-and-minmaxby-methods">The MinMax and MinMaxBy methods</h1>
 
-<p>These extension methods can be used to calculate the minimum and maximum of a generic enumerable.</p>
-<p>The System.Linq contains implementations that calculate the minimum and maximum separately,
+<p>These methods can be used to calculate the minimum and maximum of a generic enumerable.</p>
+<p>The <code>System.Linq</code> namespace contains implementations that calculate the minimum and maximum separately,
 however the implementation in this package calculates both quantities in a single-pass and requires
 less comparisons.</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 var l = new List&lt;int&gt; { 3, 2, 4, 6, 1, 4 };
 var minmax = l.MinMax();
@@ -78,7 +78,7 @@ Console.WriteLine(minmax.Maximum); // 6
 <p>The MinMaxBy method allows to sort the objects by some selector function:</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 public class Person
 {
@@ -101,7 +101,7 @@ Console.WriteLine(minmax.Maximum); // Person(Name=Paul, Age=32)
 <p>Both return the first encountered minimum and maximum.</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 public class Person
 {
@@ -121,28 +121,17 @@ var minmax = l.MinMaxBy(p =&gt; p.Age);
 Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
 Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
 </code></pre>
-<p>There are overloads for both methods that accept an IComparer<t><p>
+<p>One can also use the non-extension methods:</p>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
-
-var l = new List&lt;string&gt; { &quot;a&quot;, &quot;Z&quot; };
-var minmax = l.MinMax(StringComparer.Ordinal);
-Console.WriteLine(minmax.Minimum);  // Z
-Console.WriteLine(minmax.Maximum);  // a
-</code></pre>
-<p>As every extension method these methods can also be used with an enumerable as argument instead
-of as method on the enumerable</p>
-<pre><code class="lang-csharp">using System;
-using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax;
 
 var l = new List&lt;int&gt; { 3, 2, 4, 6, 1, 4 };
-var minmax = MinMaxExt.MinMax(l);
+var minmax = MinMaxOps.MinMax(l);
 Console.WriteLine(minmax.Minimum); // 1
 Console.WriteLine(minmax.Maximum); // 6
 </code></pre>
-</t></article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

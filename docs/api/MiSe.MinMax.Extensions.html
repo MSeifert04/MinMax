@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>API Reference </title>
+    <title>Namespace MiSe.MinMax.Extensions
+   </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="API Reference ">
+    <meta name="title" content="Namespace MiSe.MinMax.Extensions
+   ">
     <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,12 +68,31 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="api-reference">API Reference</h1>
-
-<p>This package contains two methods for calculating the minimum and maximum. Either as standalone
-methods on a static class <code>MinMaxOps</code> (in the namespace <code>MiSe.MinMax</code>) or as extension methods for
-<code>System.Collections.Generic.IEnumerable&lt;T&gt;</code> in the <code>MiSe.MinMax.Extensions</code> namespace.</p>
+            <article class="content wrap" id="_content" data-uid="MiSe.MinMax.Extensions">
+  
+  <h1 id="MiSe_MinMax_Extensions" data-uid="MiSe.MinMax.Extensions" class="text-break">Namespace MiSe.MinMax.Extensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="MiSe.MinMax.Extensions.MinMaxByExtension.html">MinMaxByExtension</a></h4>
+      <section><p>
+The MinMaxBy extension methods for <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+</p>
+<p>
+The MinMaxBy methods return the minimum and maximum item of the enumerable by comparing the
+result of a key-function applied to the items. The functions will not return the result of
+the key-function but the actual item that had the minimum/maximum key.
+In this regard these methods differs from the overload of Min and Max in the System.Linq
+namespace that take a function to **transform** the elements.
+</p>
+</section>
+      <h4><a class="xref" href="MiSe.MinMax.Extensions.MinMaxExtension.html">MinMaxExtension</a></h4>
+      <section><p>The MinMax extension methods for <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+<p>The MinMax methods return the minimum and maximum item of the enumerable.</p>
+</section>
 </article>
           </div>
           
@@ -79,9 +100,6 @@ methods on a static class <code>MinMaxOps</code> (in the namespace <code>MiSe.Mi
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/MSeifert04/MinMax/blob/master/documentation/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
