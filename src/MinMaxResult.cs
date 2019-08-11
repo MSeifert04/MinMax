@@ -1,7 +1,7 @@
 ﻿namespace MiSe.MinMax
 {
     /// <summary>
-    /// Representing the result of a <see cref="MinMaxExt.MinMax{T}(System.Collections.Generic.IEnumerable{T})"/> invocation.
+    /// Representing the result of a <see cref="MinMaxOps.MinMax{T}(System.Collections.Generic.IEnumerable{T})"/> invocation.
     /// </summary>
     /// <typeparam name="T">The type of items.</typeparam>
     public readonly struct MinMaxResult<T>
