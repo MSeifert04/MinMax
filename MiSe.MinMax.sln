@@ -44,6 +44,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FC41
 		scripts\serve_docs.bat = scripts\serve_docs.bat
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linqpad-samples", "linqpad-samples", "{346BA83E-4F59-406F-AA53-239A05BE09A1}"
+	ProjectSection(SolutionItems) = preProject
+		linqpad-samples\example1.linq = linqpad-samples\example1.linq
+		linqpad-samples\example2.linq = linqpad-samples\example2.linq
+		linqpad-samples\example3.linq = linqpad-samples\example3.linq
+		linqpad-samples\example4.linq = linqpad-samples\example4.linq
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Coverage|Any CPU = Coverage|Any CPU
