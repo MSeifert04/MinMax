@@ -1,4 +1,4 @@
-﻿namespace MSeifert.MinMax.Tests.Util
+﻿namespace MiSe.MinMax.Tests.Util
 {
     internal class ClassWithIntField
     {

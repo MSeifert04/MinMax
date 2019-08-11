@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MSeifert.MinMax.Samples
+using MiSe.MinMax.Extensions;
+
+namespace MiSe.MinMax.Samples
 {
     public static class Program
     {
@@ -13,7 +15,7 @@ namespace MSeifert.MinMax.Samples
             Example3();
             Example4();
             Example5();
-            Example6();
+            AdditionalExample1();
         }
 
         public static void Example1()
@@ -55,7 +57,7 @@ namespace MSeifert.MinMax.Samples
         public static void Example4()
         {
             var l = new List<int> { 3, 2, 4, 6, 1, 4 };
-            var minmax = MinMaxExt.MinMax(l);
+            var minmax = MinMaxOps.MinMax(l);
             Console.WriteLine(minmax.Minimum);
             Console.WriteLine(minmax.Maximum);
         }
@@ -86,7 +88,7 @@ namespace MSeifert.MinMax.Samples
             Console.WriteLine(IntegerWithComparisonCount.NumberOfComparisons);
         }
 
-        public static void Example6()
+        public static void AdditionalExample1()
         {
             var l = new List<string> { "a", "Z" };
             var minmax = l.MinMax(StringComparer.Ordinal);
@@ -95,7 +97,7 @@ namespace MSeifert.MinMax.Samples
         }
     }
 
-    public class IntegerWithComparisonCount : IComparable<IntegerWithComparisonCount>
+    internal class IntegerWithComparisonCount : IComparable<IntegerWithComparisonCount>
     {
         public int Value { get; set; }
 
@@ -117,7 +119,7 @@ namespace MSeifert.MinMax.Samples
         }
     }
 
-    public class Person
+    internal class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }

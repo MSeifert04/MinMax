@@ -4,7 +4,9 @@ using System.Linq;
 
 using BenchmarkDotNet.Attributes;
 
-namespace MSeifert.MinMax.Benchmarks
+using MiSe.MinMax.Extensions;
+
+namespace MiSe.MinMax.Benchmarks
 {
     [ClrJob(baseline: true), CoreJob]
     [RankColumn]

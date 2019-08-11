@@ -1,8 +1,5 @@
 # API Reference
 
-The package contains just two extension methods for `System.Collections.Generic.IEnumerable<T>` and
-one struct for the return value of these methods:
-
-- MinMax
-- MinMaxBy
-- MinMaxResult
+This package contains two methods for calculating the minimum and maximum. Either as standalone
+methods on a static class `MinMaxOps` (in the namespace `MiSe.MinMax`) or as extension methods for 
+`System.Collections.Generic.IEnumerable<T>` in the `MiSe.MinMax.Extensions` namespace.

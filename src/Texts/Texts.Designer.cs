@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MSeifert.MinMax.Texts {
+namespace MiSe.MinMax.Texts {
     using System;
     using System.Reflection;
 
@@ -40,7 +40,7 @@ namespace MSeifert.MinMax.Texts {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MSeifert.MinMax.Texts.Texts", typeof(Texts).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MiSe.MinMax.Texts.Texts", typeof(Texts).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

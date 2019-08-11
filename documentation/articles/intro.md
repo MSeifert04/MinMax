@@ -8,6 +8,7 @@ when using both.
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MiSe.MinMax.Extensions
 
 public class IntegerWithComparisonCount : IComparable<IntegerWithComparisonCount>
 {

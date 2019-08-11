@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 
-namespace MSeifert.MinMax.Tests.TestData
+namespace MiSe.MinMax.Tests.TestData
 {
     internal class LengthFourIntegerLists : TheoryData<List<int>>
     {

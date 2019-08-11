@@ -13,19 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{B8E3619A-91D3-499D-9501-8FCA32EC3627}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSeifert.MinMax.Benchmarks", "benchmarks\MSeifert.MinMax.Benchmarks.csproj", "{9171B86B-6CD5-436A-B787-C42C243D4588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiSe.MinMax.Benchmarks", "benchmarks\MiSe.MinMax.Benchmarks.csproj", "{9171B86B-6CD5-436A-B787-C42C243D4588}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2C6000B1-4B1A-478A-9F90-174D10208866} = {2C6000B1-4B1A-478A-9F90-174D10208866}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSeifert.MinMax.Samples", "samples\MSeifert.MinMax.Samples.csproj", "{A1991DBA-849B-4619-BE5E-9F3FE8131C9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiSe.MinMax.Samples", "samples\MiSe.MinMax.Samples.csproj", "{A1991DBA-849B-4619-BE5E-9F3FE8131C9F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2C6000B1-4B1A-478A-9F90-174D10208866} = {2C6000B1-4B1A-478A-9F90-174D10208866}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSeifert.MinMax", "src\MSeifert.MinMax.csproj", "{2C6000B1-4B1A-478A-9F90-174D10208866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiSe.MinMax", "src\MiSe.MinMax.csproj", "{2C6000B1-4B1A-478A-9F90-174D10208866}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSeifert.MinMax.Tests", "tests\MSeifert.MinMax.Tests.csproj", "{58265555-536E-46C1-B298-075844F1DD10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiSe.MinMax.Tests", "tests\MiSe.MinMax.Tests.csproj", "{58265555-536E-46C1-B298-075844F1DD10}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2C6000B1-4B1A-478A-9F90-174D10208866} = {2C6000B1-4B1A-478A-9F90-174D10208866}
 	EndProjectSection
@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeifert.MinMax.Documentation", "documentation\MSeifert.MinMax.Documentation.csproj", "{8708DBA4-9A17-4D76-8326-7C0DBF0E1D25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiSe.MinMax.Documentation", "documentation\MiSe.MinMax.Documentation.csproj", "{8708DBA4-9A17-4D76-8326-7C0DBF0E1D25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FC415D95-2431-4A2F-8B70-E19C5A488776}"
 	ProjectSection(SolutionItems) = preProject

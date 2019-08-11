@@ -1,22 +1,154 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MSeifert.MinMax
+namespace MiSe.MinMax
 {
-    /// <summary>
-    /// <para>
-    /// The MinMaxBy extension methods for <see cref="IEnumerable{T}"/>
-    /// </para>
-    /// <para>
-    /// The MinMaxBy methods return the minimum and maximum item of the enumerable by comparing the
-    /// result of a key-function applied to the items. The functions will not return the result of
-    /// the key-function but the actual item that had the minimum/maximum key.
-    /// In this regard these methods differs from the overload of Min and Max in the System.Linq
-    /// namespace that take a function to **transform** the elements.
-    /// </para>
-    /// </summary>
-    public static class MinMaxByExt
+    /// <summary>Class containing the MinMax methods.</summary>
+    public static class MinMaxOps
     {
+        /// <summary>
+        /// Returns the minimum and maximum value of an iterable. In case of multiple occurrences
+        /// the first instance is returned.
+        /// </summary>
+        /// <typeparam name="T">
+        /// The type of the values in the <paramref name="source"/>.
+        /// </typeparam>
+        /// <param name="source">
+        /// The enumerable of values from which to get the minimum and maximum.
+        /// </param>
+        /// <returns>
+        /// A value tuple containing the minimum (first element) and maximum (second element).
+        /// </returns>
+        /// <exception cref="ArgumentNullException">
+        /// If the <paramref name="source"/> is null.
+        /// </exception>
+        /// <exception cref="InvalidOperationException">
+        /// If the <paramref name="source"/> contains no elements.
+        /// </exception>
+        public static MinMaxResult<T> MinMax<T>(IEnumerable<T> source) where T : IComparable<T>
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            var enumerator = source.GetEnumerator();
+            if (!enumerator.MoveNext())
+            {
+                throw new InvalidOperationException(Texts.Texts.ContainsNoElements);
+            }
+
+            var min = enumerator.Current;
+            var max = min;
+            while (enumerator.MoveNext())
+            {
+                var firstItem = enumerator.Current;
+                if (enumerator.MoveNext())
+                {
+                    var secondItem = enumerator.Current;
+                    if (firstItem.CompareTo(secondItem) > 0)
+                    {
+                        (firstItem, secondItem) = (secondItem, firstItem);
+                    }
+                    if (firstItem.CompareTo(min) < 0)
+                    {
+                        min = firstItem;
+                    }
+                    if (secondItem.CompareTo(max) > 0)
+                    {
+                        max = secondItem;
+                    }
+                }
+                else
+                {
+                    if (firstItem.CompareTo(min) < 0)
+                    {
+                        min = firstItem;
+                    }
+                    else if (firstItem.CompareTo(max) > 0)
+                    {
+                        max = firstItem;
+                    }
+                }
+            }
+            return new MinMaxResult<T>(min, max);
+        }
+
+        /// <summary>
+        /// Returns the minimum and maximum value of an iterable using a comparer. In case of
+        /// multiple occurrences the first instance is returned.
+        /// </summary>
+        /// <typeparam name="T">
+        /// The type of the values in the <paramref name="source"/>.
+        /// </typeparam>
+        /// <param name="source">
+        /// The enumerable of values from which to get the minimum and maximum.
+        /// </param>
+        /// <param name="comparer">
+        /// The comparer for the values.
+        /// </param>
+        /// <returns>
+        /// A value tuple containing the minimum (first element) and maximum (second element).
+        /// </returns>
+        /// <exception cref="ArgumentNullException">
+        /// If the <paramref name="source"/> or <paramref name="comparer"/> is null.
+        /// </exception>
+        /// <exception cref="InvalidOperationException">
+        /// If the <paramref name="source"/> contains no elements.
+        /// </exception>
+        public static MinMaxResult<T> MinMax<T>(IEnumerable<T> source, IComparer<T> comparer)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+            if (comparer == null)
+            {
+                throw new ArgumentNullException(nameof(comparer));
+            }
+
+            var enumerator = source.GetEnumerator();
+            if (!enumerator.MoveNext())
+            {
+                throw new InvalidOperationException(Texts.Texts.ContainsNoElements);
+            }
+
+            var min = enumerator.Current;
+            var max = min;
+            while (enumerator.MoveNext())
+            {
+                var firstItem = enumerator.Current;
+                if (enumerator.MoveNext())
+                {
+                    var secondItem = enumerator.Current;
+                    if (comparer.Compare(firstItem, secondItem) > 0)
+                    {
+                        (firstItem, secondItem) = (secondItem, firstItem);
+                    }
+                    if (comparer.Compare(firstItem, min) < 0)
+                    {
+                        min = firstItem;
+                    }
+                    if (comparer.Compare(secondItem, max) > 0)
+                    {
+                        max = secondItem;
+                    }
+                }
+                else
+                {
+                    if (comparer.Compare(firstItem, min) < 0)
+                    {
+                        min = firstItem;
+                    }
+                    else if (comparer.Compare(firstItem, max) > 0)
+                    {
+                        max = firstItem;
+                    }
+                }
+            }
+            return new MinMaxResult<T>(min, max);
+        }
+
         /// <summary>
         /// Returns the minimum and maximum value of an iterable by comparing the results of a
         /// selector function. In case of multiple occurrences the first instance is returned.
@@ -44,7 +176,7 @@ namespace MSeifert.MinMax
         /// If the <paramref name="source"/> contains no elements.
         /// </exception>
         public static MinMaxResult<TItem> MinMaxBy<TItem, TKey>(
-            this IEnumerable<TItem> source,
+            IEnumerable<TItem> source,
             Func<TItem, TKey> keyFunc
             ) where TKey : IComparable<TKey>
         {
@@ -140,9 +272,10 @@ namespace MSeifert.MinMax
         /// If the <paramref name="source"/> contains no elements.
         /// </exception>
         public static MinMaxResult<TItem> MinMaxBy<TItem, TKey>(
-            this IEnumerable<TItem> source,
+            IEnumerable<TItem> source,
             Func<TItem, TKey> keyFunc,
-            IComparer<TKey> comparer)
+            IComparer<TKey> comparer
+            )
         {
             if (source == null)
             {

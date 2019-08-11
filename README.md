@@ -1,15 +1,15 @@
-# The MinMax and MinMaxBy extension methods
+# The MinMax and MinMaxBy methods
 
-These extension methods can be used to calculate the minimum and maximum of a generic enumerable.
+These methods can be used to calculate the minimum and maximum of a generic enumerable.
 
-The System.Linq contains implementations that calculate the minimum and maximum separately,
+The `System.Linq` namespace contains implementations that calculate the minimum and maximum separately,
 however the implementation in this package calculates both quantities in a single-pass and requires
 less comparisons.
 
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 var l = new List<int> { 3, 2, 4, 6, 1, 4 };
 var minmax = l.MinMax();
@@ -22,7 +22,7 @@ The MinMaxBy method allows to sort the objects by some selector function:
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 public class Person
 {
@@ -48,7 +48,7 @@ Both return the first encountered minimum and maximum.
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax.Extensions;
 
 public class Person
 {
@@ -69,16 +69,16 @@ Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
 Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
 ```
 
-As every extension method these methods can also be used with an enumerable as argument instead
-of as method on the enumerable
+One can also use the non-extension methods:
 
 ```csharp
 using System;
 using System.Collections.Generic;
-using MSeifert.MinMax;
+using MiSe.MinMax;
+
 
 var l = new List<int> { 3, 2, 4, 6, 1, 4 };
-var minmax = MinMaxExt.MinMax(l);
+var minmax = MinMaxOps.MinMax(l);
 Console.WriteLine(minmax.Minimum); // 1
 Console.WriteLine(minmax.Maximum); // 6
 ```

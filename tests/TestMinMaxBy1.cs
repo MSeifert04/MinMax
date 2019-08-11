@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MSeifert.MinMax.Tests.TestData;
-using MSeifert.MinMax.Tests.Util;
+using MiSe.MinMax.Extensions;
+using MiSe.MinMax.Tests.TestData;
+using MiSe.MinMax.Tests.Util;
 using Xunit;
 
-namespace MSeifert.MinMax.Tests
+namespace MiSe.MinMax.Tests
 {
     public class TestMinMaxBy1
     {
