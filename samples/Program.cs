@@ -112,6 +112,7 @@ namespace MiSe.MinMax.Samples
         {
             Value = value;
         }
+
         public int CompareTo(IntegerWithComparisonCount other)
         {
             NumberOfComparisons++;

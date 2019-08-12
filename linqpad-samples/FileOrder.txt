@@ -1,0 +1,6 @@
+MinMax Basic Example.linq
+MinMaxBy Basic Example.linq
+MinMax Uses First Min.linq
+MinMax Non-Extension.linq
+MinMax With Comparer.linq
+Number Of Comparisons.linq
