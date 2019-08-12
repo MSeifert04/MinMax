@@ -31,6 +31,33 @@ namespace MiSe.MinMax.Tests
             Assert.Equal(1, r.Maximum);
         }
 
+        [Fact]
+        public void WithArray()
+        {
+            var a = new[] { 1, 2, 3 };
+            var r = a.MinMax();
+            Assert.Equal(1, r.Minimum);
+            Assert.Equal(3, r.Maximum);
+        }
+
+        [Fact]
+        public void WithQueue()
+        {
+            var a = new Queue<int> (new[] { 1, 2, 3 });
+            var r = a.MinMax();
+            Assert.Equal(1, r.Minimum);
+            Assert.Equal(3, r.Maximum);
+        }
+
+        [Fact]
+        public void WithHashSet()
+        {
+            var a = new HashSet<int> { 1, 2, 3 };
+            var r = a.MinMax();
+            Assert.Equal(1, r.Minimum);
+            Assert.Equal(3, r.Maximum);
+        }
+
         [Theory]
         [ClassData(typeof(LengthTwoIntegerLists))]
         public void LengthTwo(List<int> l)
