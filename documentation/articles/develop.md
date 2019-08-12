@@ -27,3 +27,9 @@ These need to be reviewed if these are applicable.
 
 - Samples: Execute the project samples (can be done in either "Debug" or "Release" mode).
 - Benchmarks: Execute the project benchmarks (should be done in "Release" mode).
+
+## Solution folders: scripts, linqpad-samples
+
+The solution folders should be kept in sync with the directory contents. In Visual Studio this is
+easiest if the file is created in the "Folder View" and then added as "Existing Item" in the
+"Solution View".
