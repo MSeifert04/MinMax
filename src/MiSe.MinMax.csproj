@@ -5,7 +5,7 @@
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Configurations>Debug;Release;Coverage;Test;Documentation</Configurations>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Michael Seifert</Authors>
     <Description>Methods for calculating the minimum and maximum of an IEnumerable&lt;T&gt; in one pass.</Description>
     <PackageProjectUrl>https://github.com/MSeifert04/MinMax</PackageProjectUrl>
@@ -15,7 +15,7 @@
   <PropertyGroup>
     <DocumentationFile>bin\MiSe.MinMax.xml</DocumentationFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageTags>linq extensions</PackageTags>
+    <PackageTags>linq extensions linqpad-samples</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
