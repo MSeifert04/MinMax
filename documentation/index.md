@@ -1,10 +1,24 @@
 # The MinMax and MinMaxBy methods
 
-These methods can be used to calculate the minimum and maximum of a generic enumerable.
+The `MinMax` method can be used to calculate the minimum and maximum of a generic enumerable.
 
-The `System.Linq` namespace contains implementations that calculate the minimum and maximum separately,
-however the implementation in this package calculates both quantities in a single-pass and requires
-less comparisons.
+While this could be simply solved using the `Min` and `Max` method in `System.Linq` namespace
+the implementation in this package calculates both quantities in a single-pass and requires fewer
+comparisons.
+
+There are two methods for calculating the minimum and maximum.
+
+- `MinMax` determines the minimum and maximum of the items in the enumerable by comparing the items.
+- `MinMaxBy` returns the minimum and maximum of the items in the enumerable by comparing the result
+  of a selector function applied to the items.
+
+Both methods have an overload accepting an comparer.
+
+These methods available as static methods on a static class `MinMaxOps` (in the namespace
+`MiSe.MinMax`) or as extension methods for `System.Collections.Generic.IEnumerable<T>` in the
+`MiSe.MinMax.Extensions` namespace.
+
+## Example usage
 
 ```csharp
 using System;
@@ -17,67 +31,7 @@ Console.WriteLine(minmax.Minimum); // 1
 Console.WriteLine(minmax.Maximum); // 6
 ```
 
-The MinMaxBy method allows to sort the objects by some selector function:
-
-```csharp
-using System;
-using System.Collections.Generic;
-using MiSe.MinMax.Extensions;
-
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public override string ToString() => $"Person(Name={Name}, Age={Age})";
-}
-
-var l = new List<Person>
-{
-    new Person { Name = "Oliver", Age = 22 },
-    new Person { Name = "Paul", Age = 32 },
-    new Person { Name = "Kate", Age = 26 },
-    new Person { Name = "Peter", Age = 18 }
-};
-var minmax = l.MinMaxBy(p => p.Age);
-Console.WriteLine(minmax.Minimum); // Person(Name=Peter, Age=18)
-Console.WriteLine(minmax.Maximum); // Person(Name=Paul, Age=32)
-```
-
-Both return the first encountered minimum and maximum.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using MiSe.MinMax.Extensions;
-
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public override string ToString() => $"Person(Name={Name}, Age={Age})";
-}
-
-var l = new List<Person>
-{
-    new Person { Name = "Oliver", Age = 18 },
-    new Person { Name = "Paul", Age = 18 },
-    new Person { Name = "Kate", Age = 18 },
-    new Person { Name = "Peter", Age = 18 }
-};
-var minmax = l.MinMaxBy(p => p.Age);
-Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
-Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
-```
-
-One can also use the non-extension methods:
-
-```csharp
-using System;
-using System.Collections.Generic;
-using MiSe.MinMax;
-
-var l = new List<int> { 3, 2, 4, 6, 1, 4 };
-var minmax = MinMaxOps.MinMax(l);
-Console.WriteLine(minmax.Minimum); // 1
-Console.WriteLine(minmax.Maximum); // 6
-```
+More examples can be found as [LINQPad](https://www.linqpad.net/) samples in the
+[linqpad-samples directory](https://github.com/MSeifert04/MinMax/tree/master/linqpad-samples). If
+you download the package with LINQPad the samples will be automatically available in LINQPad (in
+["Samples" -> "Nuget"](https://www.linqpad.net/nugetsamples.aspx)).

@@ -7,7 +7,7 @@
     <Configurations>Debug;Release;Coverage;Test;Documentation</Configurations>
     <Version>0.0.4</Version>
     <Authors>Michael Seifert</Authors>
-    <Description>Methods for calculating the minimum and maximum of an IEnumerable&lt;T&gt; in one pass.</Description>
+    <Description>Methods for calculating the minimum and maximum of an System.Collections.Generic.IEnumerable&lt;T&gt; in one pass.</Description>
     <PackageProjectUrl>https://github.com/MSeifert04/MinMax</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MSeifert04/MinMax</RepositoryUrl>
   </PropertyGroup>

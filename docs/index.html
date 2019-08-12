@@ -62,10 +62,21 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="the-minmax-and-minmaxby-methods">The MinMax and MinMaxBy methods</h1>
 
-<p>These methods can be used to calculate the minimum and maximum of a generic enumerable.</p>
-<p>The <code>System.Linq</code> namespace contains implementations that calculate the minimum and maximum separately,
-however the implementation in this package calculates both quantities in a single-pass and requires
-less comparisons.</p>
+<p>The <code>MinMax</code> method can be used to calculate the minimum and maximum of a generic enumerable.</p>
+<p>While this could be simply solved using the <code>Min</code> and <code>Max</code> method in <code>System.Linq</code> namespace
+the implementation in this package calculates both quantities in a single-pass and requires fewer
+comparisons.</p>
+<p>There are two methods for calculating the minimum and maximum.</p>
+<ul>
+<li><code>MinMax</code> determines the minimum and maximum of the items in the enumerable by comparing the items.</li>
+<li><code>MinMaxBy</code> returns the minimum and maximum of the items in the enumerable by comparing the result
+of a selector function applied to the items.</li>
+</ul>
+<p>Both methods have an overload accepting an comparer.</p>
+<p>These methods available as static methods on a static class <code>MinMaxOps</code> (in the namespace
+<code>MiSe.MinMax</code>) or as extension methods for <code>System.Collections.Generic.IEnumerable&lt;T&gt;</code> in the
+<code>MiSe.MinMax.Extensions</code> namespace.</p>
+<h2 id="example-usage">Example usage</h2>
 <pre><code class="lang-csharp">using System;
 using System.Collections.Generic;
 using MiSe.MinMax.Extensions;
@@ -75,62 +86,10 @@ var minmax = l.MinMax();
 Console.WriteLine(minmax.Minimum); // 1
 Console.WriteLine(minmax.Maximum); // 6
 </code></pre>
-<p>The MinMaxBy method allows to sort the objects by some selector function:</p>
-<pre><code class="lang-csharp">using System;
-using System.Collections.Generic;
-using MiSe.MinMax.Extensions;
-
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public override string ToString() =&gt; $&quot;Person(Name={Name}, Age={Age})&quot;;
-}
-
-var l = new List&lt;Person&gt;
-{
-    new Person { Name = &quot;Oliver&quot;, Age = 22 },
-    new Person { Name = &quot;Paul&quot;, Age = 32 },
-    new Person { Name = &quot;Kate&quot;, Age = 26 },
-    new Person { Name = &quot;Peter&quot;, Age = 18 }
-};
-var minmax = l.MinMaxBy(p =&gt; p.Age);
-Console.WriteLine(minmax.Minimum); // Person(Name=Peter, Age=18)
-Console.WriteLine(minmax.Maximum); // Person(Name=Paul, Age=32)
-</code></pre>
-<p>Both return the first encountered minimum and maximum.</p>
-<pre><code class="lang-csharp">using System;
-using System.Collections.Generic;
-using MiSe.MinMax.Extensions;
-
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public override string ToString() =&gt; $&quot;Person(Name={Name}, Age={Age})&quot;;
-}
-
-var l = new List&lt;Person&gt;
-{
-    new Person { Name = &quot;Oliver&quot;, Age = 18 },
-    new Person { Name = &quot;Paul&quot;, Age = 18 },
-    new Person { Name = &quot;Kate&quot;, Age = 18 },
-    new Person { Name = &quot;Peter&quot;, Age = 18 }
-};
-var minmax = l.MinMaxBy(p =&gt; p.Age);
-Console.WriteLine(minmax.Minimum); // Person(Name=Oliver, Age=18)
-Console.WriteLine(minmax.Maximum); // Person(Name=Oliver, Age=18)
-</code></pre>
-<p>One can also use the non-extension methods:</p>
-<pre><code class="lang-csharp">using System;
-using System.Collections.Generic;
-using MiSe.MinMax;
-
-var l = new List&lt;int&gt; { 3, 2, 4, 6, 1, 4 };
-var minmax = MinMaxOps.MinMax(l);
-Console.WriteLine(minmax.Minimum); // 1
-Console.WriteLine(minmax.Maximum); // 6
-</code></pre>
+<p>More examples can be found as <a href="https://www.linqpad.net/">LINQPad</a> samples in the
+<a href="https://github.com/MSeifert04/MinMax/tree/master/linqpad-samples">linqpad-samples directory</a>. If
+you download the package with LINQPad the samples will be automatically available in LINQPad (in
+<a href="https://www.linqpad.net/nugetsamples.aspx">&quot;Samples&quot; -&gt; &quot;Nuget&quot;</a>).</p>
 </article>
           </div>
           
