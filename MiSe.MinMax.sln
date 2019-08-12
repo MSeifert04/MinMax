@@ -46,10 +46,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FC41
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linqpad-samples", "linqpad-samples", "{346BA83E-4F59-406F-AA53-239A05BE09A1}"
 	ProjectSection(SolutionItems) = preProject
-		linqpad-samples\example1.linq = linqpad-samples\example1.linq
-		linqpad-samples\example2.linq = linqpad-samples\example2.linq
-		linqpad-samples\example3.linq = linqpad-samples\example3.linq
-		linqpad-samples\example4.linq = linqpad-samples\example4.linq
+		linqpad-samples\FileOrder.txt = linqpad-samples\FileOrder.txt
+		linqpad-samples\MinMax Basic Example.linq = linqpad-samples\MinMax Basic Example.linq
+		linqpad-samples\MinMax Non-Extension.linq = linqpad-samples\MinMax Non-Extension.linq
+		linqpad-samples\MinMax Uses First Min.linq = linqpad-samples\MinMax Uses First Min.linq
+		linqpad-samples\MinMax With Comparer.linq = linqpad-samples\MinMax With Comparer.linq
+		linqpad-samples\MinMaxBy Basic Example.linq = linqpad-samples\MinMaxBy Basic Example.linq
+		linqpad-samples\Number Of Comparisons.linq = linqpad-samples\Number Of Comparisons.linq
 	EndProjectSection
 EndProject
 Global
