@@ -1,4 +1,4 @@
-![GitHub release](https://img.shields.io/github/release/MSeifert04/MinMax) ![Nuget](https://img.shields.io/nuget/v/MiSe.MinMax)
+[![GitHub release](https://img.shields.io/github/release/MSeifert04/MinMax)](https://github.com/MSeifert04/MinMax/releases) [![Nuget](https://img.shields.io/nuget/v/MiSe.MinMax)](https://www.nuget.org/packages/MiSe.MinMax/)
 
 # The MinMax and MinMaxBy methods
 
