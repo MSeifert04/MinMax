@@ -12,7 +12,7 @@ namespace MiSe.MinMax.Extensions
     /// result of a key-function applied to the items. The functions will not return the result of
     /// the key-function but the actual item that had the minimum/maximum key.
     /// In this regard these methods differs from the overload of Min and Max in the System.Linq
-    /// namespace that take a function to **transform** the elements.
+    /// namespace that take a function to transform the elements.
     /// </para>
     /// </summary>
     public static class MinMaxByExtension
