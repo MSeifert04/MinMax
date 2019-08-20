@@ -192,3 +192,6 @@ FakesAssemblies/
 *.userprefs
 
 .DS_Store
+
+# Custom
+.docs

@@ -2,7 +2,7 @@
 
 ## Build Tasks
 
-If any of the following NuGet packages is updated the paths in the builds tasks (and scripts) need 
+If any of the following NuGet packages is updated the paths in the builds tasks (and scripts) need
 to be adjusted:
 
 - xunit.runner.console
@@ -18,9 +18,9 @@ These need to be reviewed if these are applicable.
 ## Builds
 
 - Coverage: Executes the tests and generates a coverage report in ".coverage".
-- Documentation: Generates the documentation in "docs".
+- Documentation: Generates the documentation in ".docs".
 - Tests: Runs all tests.
-- In any build a NuGet package for the library is build in either "src\bin\Release" 
+- In any build a NuGet package for the library is build in either "src\bin\Release"
   (Release configuration) or "src\bin\Debug" (any other configuration).
 
 ## Projects
@@ -33,3 +33,9 @@ These need to be reviewed if these are applicable.
 The solution folders should be kept in sync with the directory contents. In Visual Studio this is
 easiest if the file is created in the "Folder View" and then added as "Existing Item" in the
 "Solution View".
+
+## Updating the documentation
+
+The documentation is hosted using GitHub Pages on a separate branch `gh-pages`.
+To update the shown documentation simply build the "Documentation" project and
+then copy the content of the `.docs` folder to the `gh-pages` branch.
