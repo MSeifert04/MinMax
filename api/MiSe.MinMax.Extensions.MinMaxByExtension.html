@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -138,6 +138,7 @@ selector function. In case of multiple occurrences the first instance is returne
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static MinMaxResult&lt;TItem&gt; MinMaxBy&lt;TItem, TKey&gt;(this IEnumerable&lt;TItem&gt; source, Func&lt;TItem, TKey&gt; keyFunc)
+
     where TKey : IComparable&lt;TKey&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
