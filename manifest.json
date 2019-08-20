@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MiSe.MinMax.Extensions.MinMaxByExtension.html",
-          "hash": "soMReslsuPGWTWX/LJSo0g=="
+          "hash": "5LgFR4Ols4PQML7mPH0xDQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MiSe.MinMax.Extensions.html",
-          "hash": "7m3F6hLusdSKoF1ciyYOsw=="
+          "hash": "2+ZnRg0ybnndHA8YeWqr8w=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 6
+          "skipped_file_count": 3
         }
       }
     },
